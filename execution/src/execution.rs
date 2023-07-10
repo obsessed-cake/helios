@@ -23,7 +23,7 @@ use super::types::{Account, ExecutionBlock};
 
 // We currently limit the max number of logs to fetch,
 // to avoid blocking the client for too long.
-const MAX_SUPPORTED_LOGS_NUMBER: usize = 5;
+const MAX_SUPPORTED_LOGS_NUMBER: usize = 50;
 
 #[derive(Clone)]
 pub struct ExecutionClient<R: ExecutionRpc> {
